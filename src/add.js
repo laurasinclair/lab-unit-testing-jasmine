@@ -1,7 +1,1 @@
-function add (numOne, numTwo) {
-    if (numOne == undefined || numTwo == undefined) {
-        return undefined;
-    }
-
-    return numOne + numTwo;
-}
+add = (numOne, numTwo) => (numOne == undefined || numTwo == undefined || isNaN(numOne) || isNaN(numTwo) || typeof numOne !== "number" || typeof numTwo !== "number") ? undefined : numOne + numTwo

@@ -1,3 +1,1 @@
-function calculateArea() {
-
-}
+calculateArea = (num1, num2) => (num1 === undefined || num2 === undefined || isNaN(num1) || isNaN(num2)) ? undefined : num1 * num2
